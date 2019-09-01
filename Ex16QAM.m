@@ -37,5 +37,7 @@ sPlotFig = scatterplot(receivedSignal,1,0,'green.');
 hold on
 scatterplot(dataMod,1,0,'black*',sPlotFig);
 
+dataSymbolsOut = qamdemod(receivedSignal,M,'bin');
+dataSymbolsOutG = qamdemod(receivedSignalG,M);
 
-
+dataOutMatrix = de2bi(dataSymbolsOut,k);
