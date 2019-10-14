@@ -1,1 +1,0 @@
-a = perl('hello.pl');
